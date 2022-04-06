@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <link rel="stylesheet" href="./css/main.css">
+ <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+ <nav class="navbar fixed-top navbar-light bg-dark">
+    <a class="navbar-brand text-light" href="#">My BLOG</a>
+  </nav>
+
+ <link rel="stylesheet" href="./css/all.css">
+ <title>My Blogs</title>
+ <style>
+ </style>
+</head>
+<body>
+ <div class="container   m-3 p-3">
+  <div class="row">
+   <div class="col-11 col-lg-6 my-3">
+    <h3 class="text-capitalize">Blogs</h3>
+    <button class="btn text-capitalize my-2 show-btn" id="show-btn">Create Blog</button>
+    <button class="btn text-capitalize my-2 show-btn" id="ref" onclick="refresh_content()">Refresh Content</button>
+    <div class="card card-body my-3 question-card">
+     <a href="#" class="close-btn mt-0">
+      <i class="fas fa-window-close"></i>
+     </a>
+     <div class="feedback alert w-75 text-capitalize">
+      customer feedback
+     </div>
+     <form id="question-form">
+      <h5 class="text-capitalize">Title</h5>
+      <div class="form-group">
+       <textarea class="w-100" id="question-input" rows="3"></textarea>
+      </div>
+      <h5 class="text-capitalize">Description</h5>
+      <div class="form-group">
+       <textarea class="w-100" id="answer-input" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn submitBtn text-capitalize w-50">Create</button>
+     </form>
+    </div>
+   </div>
+  </div>
+
+ 
+   
+   </div>
+
+  </div>
+ </div>
+ <div class="row  d-flex  justify-content-center  col-md-12 " id="questions-list">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://picsum.photos/50/50" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Choose the perfect design</h5>
+          <p class="card-text">Create a beautiful blog that fits your style. Choose from a selection of easy-to-use templates – all with flexible layouts and hundreds of background images – or design something new.</p>
+          
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://picsum.photos/100/99" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Designing in the Browser</h5>
+          <p class="card-text">Designing in the Browser explores the intersection of design and front-end development, teaching you how to build beautiful UIs with modern web standards in mind.</p>
+          
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://picsum.photos/100/98" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">My site is measured</h5>
+          <p class="card-text">When you measure your site, web.dev uses Lighthouse, an open-source, automated tool for improving the quality of web pages. Lighthouse will audit your site in the following categories:</p>
+          
+        </div>
+      </div>
+
+    </div>
+
+<footer class="bg-dark d-flex justify-content-center pt-1 page-footer font-small purple  ">
+    <p class="text-light">Footer<p>
+</footer>
+ <!-- jquery -->
+ <script src="./js/jquery-3.3.1.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="./js/bootstrap.bundle.min.js"></script>
+ <!-- script js -->
+ <script src="./js/app.js"></script>
+</body>
+
+</html>
